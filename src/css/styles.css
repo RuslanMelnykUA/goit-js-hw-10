@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-  background-color: #f5f0ce;
+  background-color: #d5d4cb;
 }
 
 img {
@@ -17,6 +17,17 @@ img {
   margin-right: auto;
 }
 
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px dotted #2596be;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -27,17 +38,6 @@ img {
   .container {
     max-width: 1158px;
   }
-}
-
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 5px dotted #2596be;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  animation: rotation 2s linear infinite;
 }
 
 @keyframes rotation {
