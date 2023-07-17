@@ -1,7 +1,6 @@
 import { loaderEl, breedSelect } from './index';
 import { fetchBreeds } from './cat-api';
 import { renderBreedsSelect } from './renderBreedsSelect';
-
 const fetchAndRenderBreeds = () => {
   loaderEl.classList.remove('hidden');
   fetchBreeds()
@@ -17,5 +16,4 @@ const fetchAndRenderBreeds = () => {
       breedSelect.classList.remove('hidden');
     });
 };
-
 export { fetchAndRenderBreeds };
