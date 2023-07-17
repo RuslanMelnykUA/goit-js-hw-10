@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/index.js" type="module"></script>
+    <title>Image Finder</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <select id="single" class="breed-select hidden"></select>
-      <p class="loader hidden">
-        
-      </p>
-      <p class="error hidden">
-        Oops! Something went wrong! Try reloading the page!
-      </p>
-      <div class="cat-info">
-        <div class="cat-info-pict"></div>
-        <div class="cat-info-desc"></div>
-      </div>
+    <div class="search-container">
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+    <div class="gallery">
+   
     </div>
+    <button type="button" class="load-more is-hidden">Load more</button>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
