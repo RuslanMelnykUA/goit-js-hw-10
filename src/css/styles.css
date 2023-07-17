@@ -1,8 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-  background-color: #d5d4cb;
+  background-color: #faf7db;
 }
+/* body {
+  background-image: url('/src/images/bg.jpg');
+  background-repeat: no-repeat;
+} */
 
 img {
   display: block;

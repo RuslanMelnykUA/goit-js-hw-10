@@ -1,9 +1,7 @@
 const url1 = 'https://api.thecatapi.com/v1/breeds';
 const url2 = 'https://api.thecatapi.com/v1/images';
-
 const KEY =
   'live_GgxfbjAyqD8CQDQqsURjKCIkWzWX0qz2Qr1xYw6f3hjMAAFZzfuvskVv3GYQlwLo';
-
 const fetchBreeds = () => {
   return fetch(`${url1}?api_key=${KEY}`).then(response => {
     if (!response.ok) {
@@ -12,7 +10,6 @@ const fetchBreeds = () => {
     return response.json();
   });
 };
-
 const fetchCatByBreed = breedId => {
   return fetch(`${url2}/${breedId}?api_key=${KEY}`).then(response => {
     if (!response.ok) {
@@ -21,5 +18,4 @@ const fetchCatByBreed = breedId => {
     return response.json();
   });
 };
-
 export { fetchBreeds, fetchCatByBreed };

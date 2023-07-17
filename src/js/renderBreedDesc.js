@@ -1,5 +1,4 @@
 import { divPictEl, divDescEl } from './index';
-
 const renderBreedDesc = breed => {
   const markupPicture = `<img class="cat-picture" src="${breed.url}" alt="${breed.id}">`;
   const markupDescript = `<h2 class="cat-info-desc-title">${breed.breeds[0].name}</h2>
@@ -8,5 +7,4 @@ const renderBreedDesc = breed => {
   divPictEl.insertAdjacentHTML('beforeend', markupPicture);
   divDescEl.insertAdjacentHTML('beforeend', markupDescript);
 };
-
 export { renderBreedDesc };

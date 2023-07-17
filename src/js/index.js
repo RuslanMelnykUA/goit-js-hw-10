@@ -1,9 +1,7 @@
 import { fetchCatByBreed } from './cat-api';
 import { renderBreedDesc } from './renderBreedDesc';
 import { fetchAndRenderBreeds } from './fetchAndRenderBreeds';
-
 import Notiflix from 'notiflix';
-
 const breedSelect = document.querySelector('.breed-select');
 const divPictEl = document.querySelector('.cat-info-pict');
 const divDescEl = document.querySelector('.cat-info-desc');
@@ -29,5 +27,4 @@ function onChangeSelect(event) {
     })
     .finally(() => loaderEl.classList.add('hidden'));
 }
-
 export { breedSelect, divPictEl, divDescEl, loaderEl };
